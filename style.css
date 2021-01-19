@@ -1,0 +1,180 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+
+}
+
+h2,.white{
+    color: #fff;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+/* section 1 */
+.section-1{
+    padding-top: 30vh;
+    text-align: center;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.flavio-img  {
+    width: 30%;
+    border-radius: 50%;
+}
+/* section 2 */
+.section-2{
+    padding-top: 5vh;
+    width: 90%;
+}
+
+.section-2 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+    text-align: justify;
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+/* animations / utilities */
+.section-2 a:hover{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.section-1 a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    align-items: center;
+    justify-items: center;
+}
+figure {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.skills figure img  {
+    width: 60px;
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    /* box-shadow: 0 4px 8px 0 white; */
+    transition: 0.3s;
+    width: 70%;
+    height: 130px;      
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border-radius: 8px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 #909090;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    text-align: center;
+  }
+.section-2 .projects .card img {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-items: center;
+}
+
+.projects {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* media queres */
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 5rem;
+    }
+
+    .section-1 p, .section-1 h2 {
+        display: flex;
+        justify-content: center;
+
+    }
+    .section-2{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: 90%;
+    }
+    h2, p {
+        text-align: justify;
+    }
+}
