@@ -126,6 +126,7 @@ figure {
     align-items: center;
     justify-items: center;
     border-radius: 8px;
+    
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -145,9 +146,11 @@ figure {
 }
 
 .projects {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    justify-items: center;
+    
 }
 /* media queres */
 @media(max-width:780px){
